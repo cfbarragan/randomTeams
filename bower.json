@@ -1,0 +1,20 @@
+{
+  "name": "RandomTeams",
+  "description": "Arma equipos aleatorios de 10 jugadores",
+  "main": "randomTeams.js",
+  "authors": [
+    "FBarragan"
+  ],
+  "license": "gnu",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

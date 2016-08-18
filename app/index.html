@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+       <title>Random Teams (Beta) </title>
+    <!-- Estilos -->
+    <!-- inject:styles -->
+
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- endinject -->
+
+    <!-- Libraries -->
+	<!-- inject:libs -->
+	<script src="/libs/jquery.min.js"></script>
+	<!-- endinject -->
+    
+    <!-- App -->
+	<!-- inject:js -->
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/randomTeams.js"></script>
+	<!-- endinject -->
+   </HEAD>
+   <BODY>
+       <div class="container container-fluid">
+            <h1>Equipos Aleatorios</h1>
+            <div id="ppal">
+                <div id="bolsa">
+                    <h3>Jugadores Disponibles</h3>
+                    <p>Seleccione los participantes</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5" id="team1">
+                        <h3>Equipo 1 <span class="label label-info"> 0</span></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <h1> VS </h1>
+                    </div>
+                    <div class="col-md-5" id="team2">
+                        <h3>Equipo 2 <span class="label label-info"> 0</span></h3>
+                    </div>
+                </div>
+                <button type="button" onclick="generar()" class="btn btn-primary">Armar Equipos</button>
+            </div>
+      </div>
+      <div class="checkbox hidden" id="jugadorTemplate">
+        <label>
+            <input type="checkbox" onclick='juega(this);' value=""  data-id="">           
+        </label>
+    </div>
+   </BODY>
+</HTML>
